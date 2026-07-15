@@ -1,0 +1,213 @@
+<!--
+  Darshan A Portfolio
+  Personal AI/ML portfolio site.
+  Contact: darshanhere7090@gmail.com
+-->
+<!DOCTYPE html>
+<html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+
+    <!-- Todo: put here your site title -->
+    <title>[Darshan A] | AIML Engineer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta name="keywords" content="Machine Learning, Python, AI Engineer" />
+    <!-- Todo: improve your SEO by adding a small description of you -->
+    <meta name="description" content="Darshan A – AI/ML Engineer specializing in Machine Learning, Python & Deep Learning. Building intelligent, data-driven systems from predictive modeling to production-ready AI solutions. B.E. Computer Science student at VTU, Bengaluru." />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+
+  </head>
+
+  <!-- Todo: read the following HTML Todos to create your stunning portfolio website -->
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Darshan A</span>
+          <br />
+          AIML Engineer.
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                I'm an AI/ML Engineer transitioning my engineering focus fully into Machine Learning and Artificial Intelligence — building models and intelligent systems rather than just studying the theory. My systems-engineering background gives me an edge most ML-only candidates don't have: I understand how to take a model from a notebook to something that actually runs reliably in production.
+              </p>
+              <p class="about-wrapper__info-text">
+                Currently pursuing my B.E. in Computer Science at VTU (2023–2027), I'm building hands-on ML projects in predictive modeling and recently completed Cognizant's AI Job Simulation. I'm actively seeking AI/ML Engineer opportunities — especially at startups where I can grow fast and own real ML problems.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  href="assets/resume(AIML).pdf"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">Projects</h2>
+
+          <!-- Notice: each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text load-hidden">
+                <h3 class="project-wrapper__text-title">Sentiment Analysis Web App</h3>
+                <p class="project-wrapper__stack">Python | Flask | NLTK | Scikit-Learn | Logistic Regression | TF-IDF</p>
+                <ul class="project-wrapper__highlights">
+                  <li>
+                    Built a sentiment analysis web app that classifies user-submitted text as positive, negative, or neutral using a Logistic
+                    Regression model trained on the IMDB movie reviews dataset.
+                  </li>
+                  <li>
+                    Applied TF-IDF vectorization and text preprocessing (tokenization, stopword removal, lemmatization) using NLTK,
+                    achieving 88% classification accuracy on the test set.
+                  </li>
+                  <li>
+                    Deployed the model via a Flask REST API, enabling real-time predictions through a clean web interface.
+                  </li>
+                  <li>
+                    Visualized model performance using confusion matrix and ROC curves with Matplotlib and Seaborn for evaluation insights.
+                  </li>
+                </ul>
+                <div class="project-wrapper__cta">
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn cta-btn--hero"
+                    href="#!"
+                  >
+                    See Live
+                  </a>
+                  <a
+                    rel="noreferrer"
+                    target="_blank"
+                    class="cta-btn text-color-main"
+                    href="#!"
+                  >
+                    Source Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image load-hidden">
+                <a rel="noreferrer" href="#!" target="_blank">
+                  <div
+                    data-tilt
+                    data-tilt-max="4"
+                    data-tilt-glare="true"
+                    data-tilt-max-glare="0.5"
+                    class="thumbnail rounded js-tilt"
+                  >
+                    <span class="project-wrapper__image-glow" aria-hidden="true"></span>
+                    <img
+                      alt="Sentiment Analysis dashboard preview"
+                      class="img-fluid"
+                      src="assets/sentiment-analysis-dashboard.svg"
+                    />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <div></div>
+
+          
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">darshanhere7090@gmail.com</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=darshanhere7090@gmail.com"
+            >Email Me</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a rel="noreferrer" href="https://linkedin.com/in/darshan897038" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a rel="noreferrer" href="https://github.com/darshan8970" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+
+        <p class="footer__text">Built with passion by Darshan A</p>
+
+
+      </div>
+    </footer>
+    <!-- /END Footer Section -->
+
+    <script defer type="module" src="index.js"></script>
+  </body>
+</html>

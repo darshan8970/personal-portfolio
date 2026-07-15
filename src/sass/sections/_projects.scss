@@ -1,0 +1,245 @@
+#projects {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(2, 170, 176, 0.16) 0%, rgba(2, 170, 176, 0) 45%),
+    radial-gradient(circle at 85% 80%, rgba(0, 205, 172, 0.2) 0%, rgba(0, 205, 172, 0) 40%),
+    linear-gradient(180deg, #f8fdff 0%, #f3f9fb 100%);
+  color: $dark-blue-text;
+  margin-top: -10rem;
+  padding-top: 15rem;
+  position: relative;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    width: 34rem;
+    height: 34rem;
+    border-radius: 50%;
+    filter: blur(1px);
+    opacity: 0.38;
+    pointer-events: none;
+  }
+
+  &::before {
+    top: 12rem;
+    left: -10rem;
+    background: linear-gradient(145deg, rgba(2, 170, 176, 0.35), rgba(0, 205, 172, 0.08));
+    animation: floatOrbLeft 9s ease-in-out infinite;
+  }
+
+  &::after {
+    bottom: 2rem;
+    right: -12rem;
+    background: linear-gradient(145deg, rgba(0, 205, 172, 0.28), rgba(39, 35, 65, 0.06));
+    animation: floatOrbRight 10s ease-in-out infinite;
+  }
+
+  @include respond(tab-land) {
+    margin-top: 0;
+    padding-top: 5rem;
+  }
+
+  .project-wrapper {
+    margin-bottom: 15rem;
+    position: relative;
+    z-index: 1;
+
+    @include respond(phone) {
+      margin-bottom: 0rem;
+    }
+
+    .row {
+      margin-bottom: 8rem;
+      align-items: center;
+      padding: 4.6rem 3.4rem;
+      border-radius: 2.4rem;
+      border: 1px solid rgba(39, 35, 65, 0.08);
+      background: rgba(255, 255, 255, 0.68);
+      box-shadow: 0 22px 55px rgba(31, 51, 73, 0.12);
+      backdrop-filter: blur(4px);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+
+      &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 30px 65px rgba(31, 51, 73, 0.18);
+      }
+
+      @include respond(phone) {
+        margin-bottom: 4rem;
+        padding: 2.6rem 1.8rem;
+        border-radius: 1.8rem;
+        backdrop-filter: none;
+      }
+    }
+
+    &__text {
+      text-align: left;
+
+      @include respond(phone) {
+        margin-bottom: 2.5rem !important;
+      }
+      @include respond(tab-land) {
+        margin-bottom: 4.8rem;
+      }
+
+      &-title {
+        font-weight: bold;
+        margin-bottom: 1.2rem;
+        font-size: 3.4rem;
+        letter-spacing: 0.03em;
+        line-height: 1.15;
+
+        @include respond(phone) {
+          font-size: 2.6rem;
+        }
+      }
+
+      & p > a {
+        color: $secondary-color;
+      }
+    }
+
+    &__stack {
+      margin-bottom: 1.8rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.6;
+      color: rgba(39, 35, 65, 0.88);
+      font-size: 1.7rem;
+    }
+
+    &__highlights {
+      margin: 0 0 2.8rem;
+      padding-left: 2rem;
+
+      li {
+        margin-bottom: 1rem;
+        line-height: 1.62;
+        color: rgba(39, 35, 65, 0.92);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    &__cta {
+      display: flex;
+      gap: 1.6rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    &__image {
+      width: 90%;
+      margin: 0 auto;
+      position: relative;
+
+      @include respond(tab-land) {
+        width: 100%;
+        margin: 0;
+      }
+
+      & .thumbnail {
+        border: 1px solid rgba(255, 255, 255, 0.8);
+        overflow: hidden;
+        box-shadow: 0 25px 48px rgba(17, 33, 52, 0.22);
+        transition: 0.45s transform cubic-bezier(0.16, 1, 0.3, 1),
+          0.45s box-shadow,
+          0.45s border-color;
+
+        &:hover {
+          transform: translateY(-10px) scale(1.01);
+          border-color: rgba(0, 205, 172, 0.55);
+          box-shadow: 0 35px 58px rgba(17, 33, 52, 0.26);
+        }
+
+        .project-wrapper__image-glow {
+          content: "";
+          position: absolute;
+          top: -20%;
+          left: -25%;
+          width: 62%;
+          height: 150%;
+          transform: rotate(18deg);
+          background: linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0) 0%,
+            rgba(255, 255, 255, 0.17) 50%,
+            rgba(255, 255, 255, 0) 100%
+          );
+          animation: imageSweep 5.5s linear infinite;
+          pointer-events: none;
+        }
+
+        img {
+          transform: scale(1.01);
+          transition: transform 0.45s ease;
+        }
+
+        &:hover img {
+          transform: scale(1.06);
+        }
+
+        @include respond(phone) {
+          border: 1px solid $light-grey;
+          box-shadow: 0 12px 28px rgba(17, 33, 52, 0.14);
+          margin-bottom: 3.2rem;
+
+          &:hover {
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes floatOrbLeft {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(3rem, -2.4rem) scale(1.07);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes floatOrbRight {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  50% {
+    transform: translate(-2.6rem, 2rem) scale(0.95);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes imageSweep {
+  0% {
+    transform: translateX(-160%) rotate(18deg);
+  }
+  100% {
+    transform: translateX(280%) rotate(18deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #projects::before,
+  #projects::after,
+  #projects .project-wrapper__image .thumbnail .project-wrapper__image-glow {
+    animation: none !important;
+  }
+
+  #projects .project-wrapper .row,
+  #projects .project-wrapper__image .thumbnail,
+  #projects .project-wrapper__image .thumbnail img {
+    transition: none !important;
+    transform: none !important;
+  }
+}
