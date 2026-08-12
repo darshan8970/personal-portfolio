@@ -92,77 +92,363 @@
     </section>
     <!-- /END About Section -->
 
+    
     <!-- **** Projects Section **** -->
     <section id="projects">
       <div class="container">
         <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
 
-          <!-- Notice: each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text load-hidden">
-                <h3 class="project-wrapper__text-title">Sentiment Analysis Web App</h3>
-                <p class="project-wrapper__stack">Python | Flask | NLTK | Scikit-Learn | Logistic Regression | TF-IDF</p>
-                <ul class="project-wrapper__highlights">
-                  <li>
-                    Built a sentiment analysis web app that classifies user-submitted text as positive, negative, or neutral using a Logistic
-                    Regression model trained on the IMDB movie reviews dataset.
-                  </li>
-                  <li>
-                    Applied TF-IDF vectorization and text preprocessing (tokenization, stopword removal, lemmatization) using NLTK,
-                    achieving 88% classification accuracy on the test set.
-                  </li>
-                  <li>
-                    Deployed the model via a Flask REST API, enabling real-time predictions through a clean web interface.
-                  </li>
-                  <li>
-                    Visualized model performance using confusion matrix and ROC curves with Matplotlib and Seaborn for evaluation insights.
-                  </li>
-                </ul>
-                <div class="project-wrapper__cta">
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    class="cta-btn cta-btn--hero"
-                    href="#!"
-                  >
-                    See Live
-                  </a>
-                  <a
-                    rel="noreferrer"
-                    target="_blank"
-                    class="cta-btn text-color-main"
-                    href="#!"
-                  >
-                    Source Code
-                  </a>
-                </div>
+          <div class="projects-heading">
+            <span class="projects-heading__eyebrow">WHAT I'VE BUILT</span>
+            <h2 class="section-title dark-blue-text">Projects</h2>
+            <p class="projects-heading__subtitle">
+              A collection of projects where I turn concepts into practical,
+              working systems.
+            </p>
+          </div>
+
+          <!-- ==================== PROJECT 01 ==================== -->
+          <article class="project-card project-card--python">
+            <div class="project-card__content">
+
+              <div class="project-card__top">
+                <span class="project-card__number">01</span>
+                <span class="project-card__status project-card__status--completed">
+                  <span></span> Completed
+                </span>
               </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image load-hidden">
-                <a rel="noreferrer" href="#!" target="_blank">
-                  <div
-                    data-tilt
-                    data-tilt-max="4"
-                    data-tilt-glare="true"
-                    data-tilt-max-glare="0.5"
-                    class="thumbnail rounded js-tilt"
-                  >
-                    <span class="project-wrapper__image-glow" aria-hidden="true"></span>
-                    <img
-                      alt="Sentiment Analysis dashboard preview"
-                      class="img-fluid"
-                      src="assets/sentiment-analysis-dashboard.svg"
-                    />
-                  </div>
+
+              <div class="project-card__text">
+                <p class="project-card__category">PYTHON · CLI APPLICATION</p>
+
+                <h3>Library Management System</h3>
+
+                <p class="project-card__description">
+                  A command-line library management application built with Python,
+                  designed to handle everyday library operations through a simple
+                  menu-driven interface.
+                </p>
+
+                <div class="project-card__tags">
+                  <span>Python</span>
+                  <span>CLI</span>
+                  <span>CRUD</span>
+                  <span>Git</span>
+                </div>
+
+                <ul class="project-card__features">
+                  <li>Book management and record handling</li>
+                  <li>Search, borrow and return operations</li>
+                  <li>Menu-driven command-line workflow</li>
+                </ul>
+
+                <a
+                  class="project-card__button"
+                  href="https://github.com/darshan8970/Library-Management-System"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>View Source Code</span>
+                  <i class="fa fa-arrow-up-right-from-square"></i>
                 </a>
               </div>
             </div>
-          </div>
-          <!-- /END Project -->
 
+            <div class="project-card__visual">
+              <div class="terminal-window">
+                <div class="terminal-window__header">
+                  <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>library_manager.py</span>
+                </div>
+
+                <div class="terminal-window__body">
+                  <div>
+                    <span class="terminal-green">darshan@portfolio</span>
+                    <span class="terminal-white">:~$</span>
+                    <span class="terminal-command"> python library.py</span>
+                  </div>
+
+                  <div class="terminal-title">
+                    ╔════════════════════════════╗
+                  </div>
+                  <div class="terminal-title">
+                    ║  LIBRARY MANAGEMENT SYSTEM ║
+                  </div>
+                  <div class="terminal-title">
+                    ╚════════════════════════════╝
+                  </div>
+
+                  <div class="terminal-option">
+                    <span>01</span> Add Book
+                  </div>
+                  <div class="terminal-option">
+                    <span>02</span> View Books
+                  </div>
+                  <div class="terminal-option">
+                    <span>03</span> Search Book
+                  </div>
+                  <div class="terminal-option">
+                    <span>04</span> Borrow / Return
+                  </div>
+
+                  <div class="terminal-input">
+                    Select option <span>›</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ==================== PROJECT 02 ==================== -->
+          <article class="project-card project-card--sql">
+            <div class="project-card__content">
+
+              <div class="project-card__top">
+                <span class="project-card__number">02</span>
+                <span class="project-card__status project-card__status--completed">
+                  <span></span> Completed
+                </span>
+              </div>
+
+              <div class="project-card__text">
+                <p class="project-card__category">DATABASE · SQL PROJECT</p>
+
+                <h3>QuickMart SQL Project</h3>
+
+                <p class="project-card__description">
+                  A MySQL-based database project focused on working with structured
+                  data and writing SQL queries to retrieve, filter, group and
+                  analyse information.
+                </p>
+
+                <div class="project-card__tags">
+                  <span>SQL</span>
+                  <span>MySQL</span>
+                  <span>Queries</span>
+                  <span>Database</span>
+                </div>
+
+                <ul class="project-card__features">
+                  <li>Structured database and project schema</li>
+                  <li>Practical SQL queries and data operations</li>
+                  <li>Hands-on database analysis using MySQL</li>
+                </ul>
+
+                <a
+                  class="project-card__button"
+                  href="https://github.com/darshan8970/QuickMart-SQL-Project"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>View Source Code</span>
+                  <i class="fa fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card__visual">
+              <div class="sql-window">
+                <div class="sql-window__header">
+                  <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>quickmart.sql</span>
+                </div>
+
+                <div class="sql-window__body">
+                  <div>
+                    <span class="sql-keyword">SELECT</span>
+                    <span class="sql-white"> *</span>
+                  </div>
+
+                  <div>
+                    <span class="sql-keyword">FROM</span>
+                    <span class="sql-white"> quickmart_data</span>
+                  </div>
+
+                  <div>
+                    <span class="sql-keyword">WHERE</span>
+                    <span class="sql-value"> condition</span>
+                  </div>
+
+                  <div>
+                    <span class="sql-keyword">GROUP BY</span>
+                    <span class="sql-white"> category;</span>
+                  </div>
+
+                  <div class="sql-divider"></div>
+
+                  <div class="sql-result">
+                    <div class="sql-result__head">
+                      <span>ID</span>
+                      <span>ITEM</span>
+                      <span>VALUE</span>
+                    </div>
+
+                    <div>
+                      <span>001</span>
+                      <span>Product</span>
+                      <span>✓</span>
+                    </div>
+
+                    <div>
+                      <span>002</span>
+                      <span>Product</span>
+                      <span>✓</span>
+                    </div>
+
+                    <div>
+                      <span>003</span>
+                      <span>Product</span>
+                      <span>✓</span>
+                    </div>
+                  </div>
+
+                  <div class="sql-status">
+                    <span>●</span> Query executed successfully
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ==================== PROJECT 03 ==================== -->
+          <article class="project-card project-card--ml">
+            <div class="project-card__content">
+
+              <div class="project-card__top">
+                <span class="project-card__number">03</span>
+
+                <span class="project-card__status project-card__status--progress">
+                  <span></span> In Progress
+                </span>
+              </div>
+
+              <div class="project-card__text">
+                <p class="project-card__category">MACHINE LEARNING · PREDICTIVE MODELING</p>
+
+                <h3>Credit Risk Ensemble Learning</h3>
+
+                <p class="project-card__description">
+                  A machine learning project focused on credit-risk prediction,
+                  model training and evaluation using ensemble learning techniques.
+                </p>
+
+                <div class="project-card__tags">
+                  <span>Python</span>
+                  <span>Scikit-Learn</span>
+                  <span>Machine Learning</span>
+                  <span>Ensemble</span>
+                </div>
+
+                <ul class="project-card__features">
+                  <li>Structured ML data preparation pipeline</li>
+                  <li>Model training and hyperparameter tuning</li>
+                  <li>Performance evaluation and comparison</li>
+                </ul>
+
+                <a
+                  class="project-card__button"
+                  href="https://github.com/darshan8970/credit-risk-ensemble-learning"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <span>View Source Code</span>
+                  <i class="fa fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="project-card__visual">
+              <div class="ml-window">
+
+                <div class="ml-window__header">
+                  <div class="terminal-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span>credit_risk_model.py</span>
+                </div>
+
+                <div class="ml-pipeline">
+
+                  <div class="ml-node">
+                    <span class="ml-node__icon">
+                      <i class="fa fa-database"></i>
+                    </span>
+                    <div>
+                      <strong>Dataset</strong>
+                      <small>Input Data</small>
+                    </div>
+                  </div>
+
+                  <div class="ml-connector"></div>
+
+                  <div class="ml-node">
+                    <span class="ml-node__icon">
+                      <i class="fa fa-cogs"></i>
+                    </span>
+                    <div>
+                      <strong>Preprocess</strong>
+                      <small>Feature Prep</small>
+                    </div>
+                  </div>
+
+                  <div class="ml-connector"></div>
+
+                  <div class="ml-node ml-node--active">
+                    <span class="ml-node__icon">
+                      <i class="fa fa-sitemap"></i>
+                    </span>
+                    <div>
+                      <strong>Ensemble</strong>
+                      <small>Model Training</small>
+                    </div>
+                  </div>
+
+                  <div class="ml-connector"></div>
+
+                  <div class="ml-node">
+                    <span class="ml-node__icon">
+                      <i class="fa fa-line-chart"></i>
+                    </span>
+                    <div>
+                      <strong>Evaluate</strong>
+                      <small>Performance</small>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="ml-progress">
+                  <div class="ml-progress__top">
+                    <span>PROJECT STATUS</span>
+                    <span>BUILDING...</span>
+                  </div>
+
+                  <div class="ml-progress__bar">
+                    <span></span>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+              
           <div></div>
 
           
